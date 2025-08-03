@@ -3,16 +3,17 @@ const Navbar = () => {
         // <h1>nishant</h1>
         <nav style={{
             // backgroundColor:'red', 
-            display:'flex',
-            justifyContent:'space-between',
-            padding:'0 59px',
-            boxShadow:'0.1 8px 8px 0 rgba(0,0,0,0.30)'
+            display: 'flex',
+            justifyContent: 'space-between',
+            padding: '0 59px',
+           boxShadow: '1px 8px 8px 0 rgba(0,0,0,0.30)'
+
         }}>
             <div style={{
-                display:'flex',
-                gap:'8px',
-                alignItems:'center'
-                }}>
+                display: 'flex',
+                gap: '8px',
+                alignItems: 'center'
+            }}>
                 <img
                     src="./images/image.png"
                     width="68"
@@ -24,47 +25,93 @@ const Navbar = () => {
 
             <ul style={
                 {
-                    listStyle:"none",
-                    padding:0,
-                    margin:0,
-                    display:'flex',
+                    listStyle: "none",
+                    padding: 0,
+                    margin: 0,
+                    display: 'flex',
                     // gap:'9px'
 
                 }
             }>
-                <li><a href="/" style={
+                <li style={{
+                    display:'flex',
+                    alignItems:'center',
+                    padding:'16px 24px'
+                }}><a href="/" style={
                     {
-                        textDecoration:'none',
-                        color:'#323232',
-                        fontSize:'17px',
-                        background:'red',
-                        padding:32
-                        
-                    }
-                }>Home</a>
-                <a href="/" style={
+                        textDecoration: 'none',
+                        color: '#2f0a0aff',
+                        fontSize: '17',
+                      
+                        '&:hover':{
+                            
+                        }    
+                    }}>Home</a>
+                </li>
+
+                    <li style={{
+                    display:'flex',
+                    alignItems:'center',
+                    padding:'16px 24px'
+                }}><a href="/" style={
                     {
-                        textDecoration:'none',
-                        color:'#323232',
-                        fontSize:'17px',
-                        background:'red',
-                        padding:32
-                        
-                    }
-                }>contect us</a>
-                <a href="/" style={
+                        textDecoration: 'none',
+                        color: '#2f0a0aff',
+                        fontSize: '17',
+                 
+                        '&:hover':{
+                            
+                        }    
+                    }}>Teachers</a>
+                </li>
+
+                    <li style={{
+                    display:'flex',
+                    alignItems:'center',
+                    padding:'16px 24px'
+                }}><a href="/" style={
                     {
-                        textDecoration:'none',
-                        color:'#323232',
-                        fontSize:'17px',
-                        background:'red',
-                        padding:32
+                        textDecoration: 'none',
+                        color: '#2f0a0aff',
+                        fontSize: '17',
                         
-                    }
-                }>services</a>
-                 </li>
-                
-              
+                        '&:hover':{
+                            
+                        }    
+                    }}>Holidays</a>
+                </li>
+
+                    <li style={{
+                    display:'flex',
+                    alignItems:'center',
+                    padding:'16px 24px'
+                }}><a href="/" style={
+                    {
+                        textDecoration: 'none',
+                        color: '#2f0a0aff',
+                        fontSize: '17',
+
+                        '&:hover':{
+                            
+                        }    
+                    }}>Contect Us</a>
+                </li>
+                    <li style={{
+                    display:'flex',
+                    alignItems:'center',
+                    padding:'16px 24px'
+                }}><a href="/" style={
+                    {
+                        textDecoration: 'none',
+                        color: '#2f0a0aff',
+                        fontSize: '17',
+                          backgroundColor:'dodgerblue',
+                          padding:'16px 48px',
+                          borderRadius: 5
+                    }}>Talks To Us</a>
+                </li>
+
+
             </ul>
 
         </nav>
