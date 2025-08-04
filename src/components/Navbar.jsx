@@ -1,3 +1,4 @@
+import {Link} from 'react-router-dom'
 const Navbar = () => {
     return (
         // <h1>nishant</h1>
@@ -37,7 +38,7 @@ const Navbar = () => {
                     display:'flex',
                     alignItems:'center',
                     padding:'16px 24px'
-                }}><a href="/" style={
+                }}><Link to="/" style={
                     {
                         textDecoration: 'none',
                         color: '#2f0a0aff',
@@ -46,14 +47,14 @@ const Navbar = () => {
                         '&:hover':{
                             
                         }    
-                    }}>Home</a>
+                    }}>Home</Link>
                 </li>
 
                     <li style={{
                     display:'flex',
                     alignItems:'center',
                     padding:'16px 24px'
-                }}><a href="/" style={
+                }}><Link to="/Teachers" style={
                     {
                         textDecoration: 'none',
                         color: '#2f0a0aff',
@@ -62,14 +63,14 @@ const Navbar = () => {
                         '&:hover':{
                             
                         }    
-                    }}>Teachers</a>
+                    }}>Teachers</Link>
                 </li>
 
                     <li style={{
                     display:'flex',
                     alignItems:'center',
                     padding:'16px 24px'
-                }}><a href="/" style={
+                }}><Link to="/Holidays" style={
                     {
                         textDecoration: 'none',
                         color: '#2f0a0aff',
@@ -78,29 +79,26 @@ const Navbar = () => {
                         '&:hover':{
                             
                         }    
-                    }}>Holidays</a>
+                    }}>Holidays</Link>
                 </li>
 
                     <li style={{
                     display:'flex',
                     alignItems:'center',
                     padding:'16px 24px'
-                }}><a href="/" style={
+                }}><Link to="/ContectUs" style={
                     {
                         textDecoration: 'none',
                         color: '#2f0a0aff',
-                        fontSize: '17',
-
-                        '&:hover':{
-                            
-                        }    
-                    }}>Contect Us</a>
+                        fontSize: '17',  
+                    }}>ContectUs</Link>
                 </li>
+
                     <li style={{
                     display:'flex',
                     alignItems:'center',
                     padding:'16px 24px'
-                }}><a href="/" style={
+                }}><Link to="/Talk to us" style={
                     {
                         textDecoration: 'none',
                         color: '#2f0a0aff',
@@ -108,7 +106,7 @@ const Navbar = () => {
                           backgroundColor:'dodgerblue',
                           padding:'16px 48px',
                           borderRadius: 5
-                    }}>Talks To Us</a>
+                    }}>Talks To Us</Link>
                 </li>
 
 
