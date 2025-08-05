@@ -1,3 +1,6 @@
+import { Link } from "react-router-dom";
+
+import 'remixicon/fonts/remixicon.css'
 function Footer() {
     return (
         <footer style={{
@@ -30,25 +33,25 @@ function Footer() {
                     gap: 13
 
                 }}>
-                    <li><a href="#" style={{
+                    <li><a href="/" style={{
                         color: 'white',
                         textDecoration: 'none'
                     }}>Home</a>
                     </li>
 
-                    <li><a href="#" style={{
+                    <li><a href="/teachers" style={{
                         color: 'white',
                         textDecoration: 'none'
                     }}>Teachers</a>
                     </li>
 
-                    <li><a href="#" style={{
+                    <li><a href="/holidays" style={{
                         color: 'white',
                         textDecoration: 'none'
                     }}>Holidays</a>
                     </li>
 
-                    <li><a href="#" style={{
+                    <li><a href="*" style={{
                         color: 'white',
                         textDecoration: 'none'
                     }}>Talks TO Us</a>
@@ -63,7 +66,7 @@ function Footer() {
                     {
                         color: 'white',
                         fontWeight: '500'
-                    }}>Social links</h1>
+                    }}>Socical links</h1>
                 <ul style={{
                     padding: 0,
                     margin: 0,
@@ -72,29 +75,36 @@ function Footer() {
                     gap: 13
 
                 }}>
-                    <li><a href="#" style={{
+                    <li><a href="https://www.youtube.com/watch?v=ZgyPuS8wNOg&t=3297s" style={{
                         color: 'white',
                         textDecoration: 'none'
-                    }}>youtube</a>
+                    }}>
+                        <i className="ri-youtube-fill" style={{marginRight:7}}></i>
+                        YOutube
+                        </a>
                     </li>
 
-                    <li><a href="#" style={{
+                    <li><a href="https://www.google.com/search?q=facebook&rlz=1C1ONGR_enIN1053IN1053&oq=face&gs_lcrp=EgZjaHJvbWUqEAgAEAAYgwEY4wIYsQMYgAQyEAgAEAAYgwEY4wIYsQMYgAQyEwgBEC4YgwEYxwEYsQMY0QMYgAQyCQgCEEUYORiABDINCAMQABiDARixAxiABDIGCAQQBRhAMgYIBRBFGD0yBggGEEUYPTIGCAcQRRg90gEIMTUxMGowajeoAgCwAgA&sourceid=chrome&ie=UTF-8" style={{
                         color: 'white',
                         textDecoration: 'none'
-                    }}>FAcebook</a>
+                    }}> <i className="ri-facebook-fill" style={{marginRight:7}}></i>
+                        YOutube</a>
                     </li>
 
-                    <li><a href="#" style={{
+                    <li><a href="https://www.google.com/search?q=instagram+login&rlz=1C1ONGR_enIN1053IN1053&oq=ins&gs_lcrp=EgZjaHJvbWUqEggDEAAYQxiDARixAxiABBiKBTIGCAAQRRg8MhIIARAuGEMYxwEY0QMYgAQYigUyDggCEEUYJxg5GIAEGIoFMhIIAxAAGEMYgwEYsQMYgAQYigUyDQgEEAAYgwEYsQMYgAQyCggFEAAYsQMYgAQyBggGEEUYPDIGCAcQRRg80gEIMjY1MGowajeoAgCwAgA&sourceid=chrome&ie=UTF-8" style={{
                         color: 'white',
                         textDecoration: 'none'
-                    }}>Instagram</a>
+                    }}> <i className="ri-instagram-fill" style={{marginRight:7}}></i>
+                        YOutube</a>
                     </li>
 
-                    <li><a href="#" style={{
+                    <li><a href="https://www.linkedin.com/in/nishant-saini-455682295/" style={{
                         color: 'white',
                         textDecoration: 'none'
-                    }}>twitter</a>
+                    }}> <i className="ri-youtube-fill" style={{marginRight:7}}></i>
+                        LinkedIn</a>
                     </li>
+
                 </ul>
 
 
@@ -106,8 +116,9 @@ function Footer() {
                         color: 'white',
                         fontWeight: '500'
                     }}>codeSchool</h1>
-                <p style={{ color: 'white' }}>Lorem ipsum dolor sit amet consectetur adipisicing elit. Vero adipisci dolor necessitatibus delectus ducimus ab, voluptatibus laboriosam debitis accusantium expedita ullam. Mollitia omnis eveniet dicta quis tempora ipsam iste? Officiis.</p>
-            </div>
+            <i className="ri-hotel-line" style={{color:'white', fontSize:86}}></i>
+            <i className="ri-inbox-unarchive-line" style={{color:'white', fontSize:86}}></i>
+                  </div>
 
             <div style={{width:'100%'}}>
                 <h1 style={

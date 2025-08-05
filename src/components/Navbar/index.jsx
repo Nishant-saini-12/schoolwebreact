@@ -1,4 +1,5 @@
 import {Link} from 'react-router-dom'
+import './Navbar.css'
 const Navbar = () => {
     return (
         // <h1>nishant</h1>
@@ -44,9 +45,6 @@ const Navbar = () => {
                         color: '#2f0a0aff',
                         fontSize: '17',
                       
-                        '&:hover':{
-                            
-                        }    
                     }}>Home</Link>
                 </li>
 
@@ -81,7 +79,7 @@ const Navbar = () => {
                         }    
                     }}>Holidays</Link>
                 </li>
-
+{/* 
                     <li style={{
                     display:'flex',
                     alignItems:'center',
@@ -92,13 +90,13 @@ const Navbar = () => {
                         color: '#2f0a0aff',
                         fontSize: '17',  
                     }}>ContectUs</Link>
-                </li>
+                </li> */}
 
                     <li style={{
                     display:'flex',
                     alignItems:'center',
                     padding:'16px 24px'
-                }}><Link to="/Talk to us" style={
+                }}><Link to="/Talk to us" className="contect-us-btn" style={
                     {
                         textDecoration: 'none',
                         color: '#2f0a0aff',
@@ -106,7 +104,7 @@ const Navbar = () => {
                           backgroundColor:'dodgerblue',
                           padding:'16px 48px',
                           borderRadius: 5
-                    }}>Talks To Us</Link>
+                    }}>ContectUs</Link>
                 </li>
 
 
