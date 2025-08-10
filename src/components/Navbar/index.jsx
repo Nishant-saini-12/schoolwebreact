@@ -1,5 +1,26 @@
-import {Link} from 'react-router-dom'
+import { href, Link } from 'react-router-dom'
 import './Navbar.css'
+
+
+const menus= [
+    {
+        label: 'Home',
+        href: '/'
+    },
+    {
+        label: 'Teachers',
+        href: '/teachers'
+    },
+    {
+        label: 'Holidays',
+        href: '/holidays'
+    },
+    {
+        label: 'Contect-Us',
+        href: '/contect-us'
+    }
+
+]
 const Navbar = () => {
     return (
         // <h1>nishant</h1>
@@ -8,7 +29,7 @@ const Navbar = () => {
             display: 'flex',
             justifyContent: 'space-between',
             padding: '0 59px',
-           boxShadow: '1px 8px 8px 0 rgba(0,0,0,0.30)'
+            boxShadow: '1px 8px 8px 0 rgba(0,0,0,0.30)'
 
         }}>
             <div style={{
@@ -35,77 +56,33 @@ const Navbar = () => {
 
                 }
             }>
-                <li style={{
-                    display:'flex',
-                    alignItems:'center',
-                    padding:'16px 24px'
-                }}><Link to="/" style={
-                    {
-                        textDecoration: 'none',
-                        color: '#2f0a0aff',
-                        fontSize: '17',
-                      
-                    }}>Home</Link>
-                </li>
+                {
+                    menus.map(function (items) {
+                        return (
+                            <li style={{
+                                display: 'flex',
+                                alignItems: 'center',
+                                padding: '16px 24px'
+                            }}><Link to={items.href} style={
+                                {
+                                    textDecoration: 'none',
+                                    color: '#2f0a0aff',
+                                    fontSize: '17',
 
-                    <li style={{
-                    display:'flex',
-                    alignItems:'center',
-                    padding:'16px 24px'
-                }}><Link to="/Teachers" style={
-                    {
-                        textDecoration: 'none',
-                        color: '#2f0a0aff',
-                        fontSize: '17',
-                 
-                        '&:hover':{
-                            
-                        }    
-                    }}>Teachers</Link>
-                </li>
+                                }}>{items.label}</Link>
+                            </li>
+                        )
+                    })
 
-                    <li style={{
-                    display:'flex',
-                    alignItems:'center',
-                    padding:'16px 24px'
-                }}><Link to="/Holidays" style={
-                    {
-                        textDecoration: 'none',
-                        color: '#2f0a0aff',
-                        fontSize: '17',
-                        
-                        '&:hover':{
-                            
-                        }    
-                    }}>Holidays</Link>
-                </li>
-{/* 
-                    <li style={{
-                    display:'flex',
-                    alignItems:'center',
-                    padding:'16px 24px'
-                }}><Link to="/ContectUs" style={
-                    {
-                        textDecoration: 'none',
-                        color: '#2f0a0aff',
-                        fontSize: '17',  
-                    }}>ContectUs</Link>
-                </li> */}
 
-                    <li style={{
-                    display:'flex',
-                    alignItems:'center',
-                    padding:'16px 24px'
-                }}><Link to="/Talk to us" className="contect-us-btn" style={
-                    {
-                        textDecoration: 'none',
-                        color: '#2f0a0aff',
-                        fontSize: '17',
-                          backgroundColor:'dodgerblue',
-                          padding:'16px 48px',
-                          borderRadius: 5
-                    }}>ContectUs</Link>
-                </li>
+                }
+
+
+
+
+
+
+
 
 
             </ul>
